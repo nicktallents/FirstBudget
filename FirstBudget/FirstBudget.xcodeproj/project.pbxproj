@@ -22,6 +22,9 @@
 		4A48BC191CB94CB500891764 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC181CB94CB500891764 /* Transaction.swift */; };
 		4A48BC1B1CB9502C00891764 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC1A1CB9502C00891764 /* Budget.swift */; };
 		4A48BC1D1CB9529400891764 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC1C1CB9529400891764 /* HelperFunctions.swift */; };
+		4A48BC1F1CB9582800891764 /* PrimaryKeyCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC1E1CB9582800891764 /* PrimaryKeyCounter.swift */; };
+		4A48BC211CB9595E00891764 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC201CB9595E00891764 /* Repository.swift */; };
+		4A48BC241CB9631500891764 /* GenericModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC231CB9631500891764 /* GenericModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,9 @@
 		4A48BC181CB94CB500891764 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		4A48BC1A1CB9502C00891764 /* Budget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 		4A48BC1C1CB9529400891764 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		4A48BC1E1CB9582800891764 /* PrimaryKeyCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryKeyCounter.swift; sourceTree = "<group>"; };
+		4A48BC201CB9595E00891764 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		4A48BC231CB9631500891764 /* GenericModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				4A48BC1C1CB9529400891764 /* HelperFunctions.swift */,
+				4A48BC221CB95AEA00891764 /* Repositories */,
 				4A48BC151CB9487C00891764 /* Models */,
 				4A48BBDF1CB945B400891764 /* AppDelegate.swift */,
 				4A48BBE11CB945B400891764 /* ViewController.swift */,
@@ -163,11 +170,21 @@
 		4A48BC151CB9487C00891764 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4A48BC231CB9631500891764 /* GenericModel.swift */,
+				4A48BC1E1CB9582800891764 /* PrimaryKeyCounter.swift */,
 				4A48BC1A1CB9502C00891764 /* Budget.swift */,
 				4A48BC161CB948BA00891764 /* BudgetCategory.swift */,
 				4A48BC181CB94CB500891764 /* Transaction.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		4A48BC221CB95AEA00891764 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				4A48BC201CB9595E00891764 /* Repository.swift */,
+			);
+			name = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,8 +336,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A48BC1F1CB9582800891764 /* PrimaryKeyCounter.swift in Sources */,
 				4A48BC171CB948BA00891764 /* BudgetCategory.swift in Sources */,
 				4A48BBE21CB945B400891764 /* ViewController.swift in Sources */,
+				4A48BC241CB9631500891764 /* GenericModel.swift in Sources */,
+				4A48BC211CB9595E00891764 /* Repository.swift in Sources */,
 				4A48BC1B1CB9502C00891764 /* Budget.swift in Sources */,
 				4A48BC191CB94CB500891764 /* Transaction.swift in Sources */,
 				4A48BBE01CB945B400891764 /* AppDelegate.swift in Sources */,

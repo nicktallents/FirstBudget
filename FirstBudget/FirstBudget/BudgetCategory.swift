@@ -9,10 +9,14 @@
 import Foundation
 import RealmSwift
 
-class BudgetCategory : Object {
-    dynamic var name             : String = ""
-    dynamic var budgetValue      : Double = 0.0
-    dynamic var isMasterCategory : Bool   = true
+class BudgetCategory : GenericModel {
+    // Saved
+    dynamic var name                 : String = ""
+    dynamic var fullBudgetValue      : Double = 0.0
+    dynamic var remainingBudgetValue : Double = 0.0
     
+    // Relationships
     dynamic var endOfMonthRedistributeTo : BudgetCategory?
+    
+    // For Realm
 }

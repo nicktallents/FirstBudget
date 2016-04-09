@@ -9,8 +9,8 @@
 import Foundation
 import RealmSwift
 
-
-class Transaction : Object {
+class Transaction : GenericModel {
+    // Saved
     dynamic var totalCost : Double  = 0.0
     dynamic var type      : String  = "Expense"
     dynamic var location  : String  = ""
@@ -19,5 +19,9 @@ class Transaction : Object {
     dynamic var date      : NSDate? = NSDate()
     
     let costDistribution = [Double]()
+    
+    // Relationships
     let categories       = List<BudgetCategory>()
+    
+    // For Realm
 }
