@@ -18,6 +18,10 @@
 		4A48BC101CB9469800891764 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A48BC0D1CB9469800891764 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A48BC111CB9469800891764 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A48BC0E1CB9469800891764 /* RealmSwift.framework */; };
 		4A48BC121CB9469800891764 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A48BC0E1CB9469800891764 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A48BC171CB948BA00891764 /* BudgetCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC161CB948BA00891764 /* BudgetCategory.swift */; };
+		4A48BC191CB94CB500891764 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC181CB94CB500891764 /* Transaction.swift */; };
+		4A48BC1B1CB9502C00891764 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC1A1CB9502C00891764 /* Budget.swift */; };
+		4A48BC1D1CB9529400891764 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC1C1CB9529400891764 /* HelperFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		4A48BC011CB945B500891764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A48BC0D1CB9469800891764 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		4A48BC0E1CB9469800891764 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		4A48BC161CB948BA00891764 /* BudgetCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetCategory.swift; sourceTree = "<group>"; };
+		4A48BC181CB94CB500891764 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		4A48BC1A1CB9502C00891764 /* Budget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
+		4A48BC1C1CB9529400891764 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,8 @@
 		4A48BBDE1CB945B400891764 /* FirstBudget */ = {
 			isa = PBXGroup;
 			children = (
+				4A48BC1C1CB9529400891764 /* HelperFunctions.swift */,
+				4A48BC151CB9487C00891764 /* Models */,
 				4A48BBDF1CB945B400891764 /* AppDelegate.swift */,
 				4A48BBE11CB945B400891764 /* ViewController.swift */,
 				4A48BBE31CB945B400891764 /* Main.storyboard */,
@@ -148,6 +158,16 @@
 				4A48BC011CB945B500891764 /* Info.plist */,
 			);
 			path = FirstBudgetUITests;
+			sourceTree = "<group>";
+		};
+		4A48BC151CB9487C00891764 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A48BC1A1CB9502C00891764 /* Budget.swift */,
+				4A48BC161CB948BA00891764 /* BudgetCategory.swift */,
+				4A48BC181CB94CB500891764 /* Transaction.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +319,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A48BC171CB948BA00891764 /* BudgetCategory.swift in Sources */,
 				4A48BBE21CB945B400891764 /* ViewController.swift in Sources */,
+				4A48BC1B1CB9502C00891764 /* Budget.swift in Sources */,
+				4A48BC191CB94CB500891764 /* Transaction.swift in Sources */,
 				4A48BBE01CB945B400891764 /* AppDelegate.swift in Sources */,
+				4A48BC1D1CB9529400891764 /* HelperFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
