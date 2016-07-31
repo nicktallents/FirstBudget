@@ -18,5 +18,7 @@ class BudgetCategory : GenericModel {
     // Relationships
     dynamic var endOfMonthRedistributeTo : BudgetCategory?
     
+    // Calculated
+    
     // For Realm
 }

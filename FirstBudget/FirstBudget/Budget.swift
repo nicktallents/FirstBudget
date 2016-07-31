@@ -11,25 +11,26 @@ import RealmSwift
 
 class Budget : GenericModel {
     // Saved
-    dynamic var year     : Int    = 2016
-    dynamic var month    : String = "January"
-    dynamic var isMaster : Bool   = false
+    // Master will be saved as year: -1, month: -1
+    dynamic var year  : Int = 0
+    dynamic var month : Int = 0
     
     // Relationships
-    let income            = List<Transaction>()
-    let preTaxExpenses    = List<Transaction>()
-    let taxes             = List<Transaction>()
-    let postTaxExpenses   = List<Transaction>()
-    let dailyTransactions = List<Transaction>()
+    let income            = List<GenericTransaction>()
+    let preTaxExpenses    = List<GenericTransaction>()
+    let taxes             = List<GenericTransaction>()
+    let postTaxExpenses   = List<GenericTransaction>()
+    let dailyTransactions = List<OneTimeTransaction>()
+    let bills             = List<Bill>()
     let categories        = List<BudgetCategory>()
     
     // Calculated
     var grossIncome : Double {
-        return sumTransactionTotals(income)
+        return HelperFunctions.sumTransactionTotals(income)
     }
     
     var netIncome : Double {
-        return grossIncome - sumTransactionTotals(preTaxExpenses) - sumTransactionTotals(taxes) - sumTransactionTotals(postTaxExpenses)
+        return grossIncome - HelperFunctions.sumTransactionTotals(preTaxExpenses) - HelperFunctions.sumTransactionTotals(taxes) - HelperFunctions.sumTransactionTotals(postTaxExpenses)
     }
     
     // For Realm

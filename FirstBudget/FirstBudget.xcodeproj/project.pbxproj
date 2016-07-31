@@ -8,23 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		4A48BBE01CB945B400891764 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BBDF1CB945B400891764 /* AppDelegate.swift */; };
-		4A48BBE21CB945B400891764 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BBE11CB945B400891764 /* ViewController.swift */; };
 		4A48BBE51CB945B400891764 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A48BBE31CB945B400891764 /* Main.storyboard */; };
 		4A48BBE71CB945B400891764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A48BBE61CB945B400891764 /* Assets.xcassets */; };
 		4A48BBEA1CB945B400891764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A48BBE81CB945B400891764 /* LaunchScreen.storyboard */; };
 		4A48BBF51CB945B500891764 /* FirstBudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BBF41CB945B500891764 /* FirstBudgetTests.swift */; };
 		4A48BC001CB945B500891764 /* FirstBudgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BBFF1CB945B500891764 /* FirstBudgetUITests.swift */; };
-		4A48BC0F1CB9469800891764 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A48BC0D1CB9469800891764 /* Realm.framework */; };
-		4A48BC101CB9469800891764 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A48BC0D1CB9469800891764 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4A48BC111CB9469800891764 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A48BC0E1CB9469800891764 /* RealmSwift.framework */; };
-		4A48BC121CB9469800891764 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A48BC0E1CB9469800891764 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A48BC171CB948BA00891764 /* BudgetCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC161CB948BA00891764 /* BudgetCategory.swift */; };
-		4A48BC191CB94CB500891764 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC181CB94CB500891764 /* Transaction.swift */; };
 		4A48BC1B1CB9502C00891764 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC1A1CB9502C00891764 /* Budget.swift */; };
 		4A48BC1D1CB9529400891764 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC1C1CB9529400891764 /* HelperFunctions.swift */; };
 		4A48BC1F1CB9582800891764 /* PrimaryKeyCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC1E1CB9582800891764 /* PrimaryKeyCounter.swift */; };
 		4A48BC211CB9595E00891764 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC201CB9595E00891764 /* Repository.swift */; };
 		4A48BC241CB9631500891764 /* GenericModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC231CB9631500891764 /* GenericModel.swift */; };
+		4A48BC291CB9AF9300891764 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC281CB9AF9300891764 /* OverviewViewController.swift */; };
+		4A48BC2B1CB9B29C00891764 /* BudgetCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC2A1CB9B29C00891764 /* BudgetCategoryTableViewCell.swift */; };
+		4A48BC2D1CB9B83600891764 /* BudgetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC2C1CB9B83600891764 /* BudgetRepository.swift */; };
+		4A48BC371CD52A1C00891764 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A48BC351CD52A1C00891764 /* Realm.framework */; };
+		4A48BC381CD52A1C00891764 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A48BC351CD52A1C00891764 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A48BC391CD52A1C00891764 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A48BC361CD52A1C00891764 /* RealmSwift.framework */; };
+		4A48BC3A1CD52A1C00891764 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A48BC361CD52A1C00891764 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A8010EB1D4D5CC500903751 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8010EA1D4D5CC500903751 /* RealmService.swift */; };
+		4A8010EF1D4D697200903751 /* GenericTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8010EE1D4D697200903751 /* GenericTransaction.swift */; };
+		4A8010F11D4D69AD00903751 /* OneTimeTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8010F01D4D69AD00903751 /* OneTimeTransaction.swift */; };
+		4A8010F31D4D6E1700903751 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8010F21D4D6E1700903751 /* Bill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4A48BC131CB9469800891764 /* Embed Frameworks */ = {
+		4A48BC341CCC14DE00891764 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4A48BC121CB9469800891764 /* RealmSwift.framework in Embed Frameworks */,
-				4A48BC101CB9469800891764 /* Realm.framework in Embed Frameworks */,
+				4A48BC3A1CD52A1C00891764 /* RealmSwift.framework in Embed Frameworks */,
+				4A48BC381CD52A1C00891764 /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +67,6 @@
 /* Begin PBXFileReference section */
 		4A48BBDC1CB945B400891764 /* FirstBudget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstBudget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A48BBDF1CB945B400891764 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A48BBE11CB945B400891764 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A48BBE41CB945B400891764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A48BBE61CB945B400891764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A48BBE91CB945B400891764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,15 +77,21 @@
 		4A48BBFB1CB945B500891764 /* FirstBudgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstBudgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A48BBFF1CB945B500891764 /* FirstBudgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBudgetUITests.swift; sourceTree = "<group>"; };
 		4A48BC011CB945B500891764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A48BC0D1CB9469800891764 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		4A48BC0E1CB9469800891764 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		4A48BC161CB948BA00891764 /* BudgetCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetCategory.swift; sourceTree = "<group>"; };
-		4A48BC181CB94CB500891764 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		4A48BC1A1CB9502C00891764 /* Budget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 		4A48BC1C1CB9529400891764 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 		4A48BC1E1CB9582800891764 /* PrimaryKeyCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryKeyCounter.swift; sourceTree = "<group>"; };
 		4A48BC201CB9595E00891764 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		4A48BC231CB9631500891764 /* GenericModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericModel.swift; sourceTree = "<group>"; };
+		4A48BC281CB9AF9300891764 /* OverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
+		4A48BC2A1CB9B29C00891764 /* BudgetCategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		4A48BC2C1CB9B83600891764 /* BudgetRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetRepository.swift; sourceTree = "<group>"; };
+		4A48BC351CD52A1C00891764 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		4A48BC361CD52A1C00891764 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		4A8010EA1D4D5CC500903751 /* RealmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		4A8010EE1D4D697200903751 /* GenericTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTransaction.swift; sourceTree = "<group>"; };
+		4A8010F01D4D69AD00903751 /* OneTimeTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneTimeTransaction.swift; sourceTree = "<group>"; };
+		4A8010F21D4D6E1700903751 /* Bill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A48BC111CB9469800891764 /* RealmSwift.framework in Frameworks */,
-				4A48BC0F1CB9469800891764 /* Realm.framework in Frameworks */,
+				4A48BC391CD52A1C00891764 /* RealmSwift.framework in Frameworks */,
+				4A48BC371CD52A1C00891764 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,8 +124,8 @@
 		4A48BBD31CB945B400891764 = {
 			isa = PBXGroup;
 			children = (
-				4A48BC0D1CB9469800891764 /* Realm.framework */,
-				4A48BC0E1CB9469800891764 /* RealmSwift.framework */,
+				4A48BC351CD52A1C00891764 /* Realm.framework */,
+				4A48BC361CD52A1C00891764 /* RealmSwift.framework */,
 				4A48BBDE1CB945B400891764 /* FirstBudget */,
 				4A48BBF31CB945B500891764 /* FirstBudgetTests */,
 				4A48BBFE1CB945B500891764 /* FirstBudgetUITests */,
@@ -136,11 +146,12 @@
 		4A48BBDE1CB945B400891764 /* FirstBudget */ = {
 			isa = PBXGroup;
 			children = (
+				4A8010EA1D4D5CC500903751 /* RealmService.swift */,
 				4A48BC1C1CB9529400891764 /* HelperFunctions.swift */,
 				4A48BC221CB95AEA00891764 /* Repositories */,
 				4A48BC151CB9487C00891764 /* Models */,
+				4A48BC251CB9AED300891764 /* Controllers */,
 				4A48BBDF1CB945B400891764 /* AppDelegate.swift */,
-				4A48BBE11CB945B400891764 /* ViewController.swift */,
 				4A48BBE31CB945B400891764 /* Main.storyboard */,
 				4A48BBE61CB945B400891764 /* Assets.xcassets */,
 				4A48BBE81CB945B400891764 /* LaunchScreen.storyboard */,
@@ -170,11 +181,13 @@
 		4A48BC151CB9487C00891764 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4A48BC231CB9631500891764 /* GenericModel.swift */,
 				4A48BC1E1CB9582800891764 /* PrimaryKeyCounter.swift */,
+				4A48BC231CB9631500891764 /* GenericModel.swift */,
 				4A48BC1A1CB9502C00891764 /* Budget.swift */,
 				4A48BC161CB948BA00891764 /* BudgetCategory.swift */,
-				4A48BC181CB94CB500891764 /* Transaction.swift */,
+				4A8010F21D4D6E1700903751 /* Bill.swift */,
+				4A8010EE1D4D697200903751 /* GenericTransaction.swift */,
+				4A8010F01D4D69AD00903751 /* OneTimeTransaction.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -183,8 +196,18 @@
 			isa = PBXGroup;
 			children = (
 				4A48BC201CB9595E00891764 /* Repository.swift */,
+				4A48BC2C1CB9B83600891764 /* BudgetRepository.swift */,
 			);
 			name = Repositories;
+			sourceTree = "<group>";
+		};
+		4A48BC251CB9AED300891764 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A48BC281CB9AF9300891764 /* OverviewViewController.swift */,
+				4A48BC2A1CB9B29C00891764 /* BudgetCategoryTableViewCell.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +220,8 @@
 				4A48BBD81CB945B400891764 /* Sources */,
 				4A48BBD91CB945B400891764 /* Frameworks */,
 				4A48BBDA1CB945B400891764 /* Resources */,
-				4A48BC131CB9469800891764 /* Embed Frameworks */,
 				4A48BC141CB9471A00891764 /* ShellScript */,
+				4A48BC341CCC14DE00891764 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +280,7 @@
 				TargetAttributes = {
 					4A48BBDB1CB945B400891764 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = EW4G67KX75;
 					};
 					4A48BBEF1CB945B500891764 = {
 						CreatedOnToolsVersion = 7.3;
@@ -338,11 +362,16 @@
 			files = (
 				4A48BC1F1CB9582800891764 /* PrimaryKeyCounter.swift in Sources */,
 				4A48BC171CB948BA00891764 /* BudgetCategory.swift in Sources */,
-				4A48BBE21CB945B400891764 /* ViewController.swift in Sources */,
+				4A8010EF1D4D697200903751 /* GenericTransaction.swift in Sources */,
 				4A48BC241CB9631500891764 /* GenericModel.swift in Sources */,
+				4A8010F31D4D6E1700903751 /* Bill.swift in Sources */,
 				4A48BC211CB9595E00891764 /* Repository.swift in Sources */,
+				4A8010F11D4D69AD00903751 /* OneTimeTransaction.swift in Sources */,
+				4A48BC2B1CB9B29C00891764 /* BudgetCategoryTableViewCell.swift in Sources */,
 				4A48BC1B1CB9502C00891764 /* Budget.swift in Sources */,
-				4A48BC191CB94CB500891764 /* Transaction.swift in Sources */,
+				4A8010EB1D4D5CC500903751 /* RealmService.swift in Sources */,
+				4A48BC2D1CB9B83600891764 /* BudgetRepository.swift in Sources */,
+				4A48BC291CB9AF9300891764 /* OverviewViewController.swift in Sources */,
 				4A48BBE01CB945B400891764 /* AppDelegate.swift in Sources */,
 				4A48BC1D1CB9529400891764 /* HelperFunctions.swift in Sources */,
 			);
@@ -486,6 +515,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -494,6 +525,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nicktallents.FirstBudget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -501,6 +533,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -509,6 +543,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nicktallents.FirstBudget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -577,6 +612,7 @@
 				4A48BC061CB945B500891764 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A48BC071CB945B500891764 /* Build configuration list for PBXNativeTarget "FirstBudgetTests" */ = {
 			isa = XCConfigurationList;
@@ -585,6 +621,7 @@
 				4A48BC091CB945B500891764 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A48BC0A1CB945B500891764 /* Build configuration list for PBXNativeTarget "FirstBudgetUITests" */ = {
 			isa = XCConfigurationList;
@@ -593,6 +630,7 @@
 				4A48BC0C1CB945B500891764 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

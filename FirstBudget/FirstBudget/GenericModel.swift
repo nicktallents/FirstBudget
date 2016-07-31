@@ -10,8 +10,14 @@ import Foundation
 import RealmSwift
 
 class GenericModel : Object {
+    // Saved
     dynamic var id : Int = 0
     
+    // Relationships
+    
+    // Calculated
+    
+    // For Realm
     override static func primaryKey() -> String? {
         return "id"
     }

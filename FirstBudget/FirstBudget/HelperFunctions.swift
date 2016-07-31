@@ -9,12 +9,30 @@
 import Foundation
 import RealmSwift
 
-func sumTransactionTotals(transactions : List<Transaction>) -> Double {
-    var sum : Double = 0.0
+class HelperFunctions {
     
-    for trans in transactions {
-        sum += trans.totalCost
+    class func sumTransactionTotals(transactions : List<GenericTransaction>) -> Double {
+        var sum : Double = 0.0
+    
+        for trans in transactions {
+            sum += trans.totalCost
+        }
+    
+        return sum
     }
+
+    class func getCurrentDate() -> (day: Int, month: Int, year: Int) {
+        let date       = NSDate()
+        let calendar   = NSCalendar.currentCalendar()
+        let components = calendar.components([.Day, .Month, .Year], fromDate: date)
     
-    return sum
+        return (components.day, components.month, components.year)
+    }
+}
+
+extension Double {
+    func toCurrency() -> String {
+        let f = ".2"
+        return String(format: "%\(f)f", self)
+    }
 }

@@ -9,8 +9,14 @@
 import Foundation
 import RealmSwift
 
-class PrimaryKeyCounter : GenericModel {
+class PrimaryKeyCounter : Object {
     // Saved
     dynamic var key   : String = ""
     dynamic var value : Int    = 0
+    
+    // Relationships
+    
+    // Calculated
+    
+    // For Realm
 }
