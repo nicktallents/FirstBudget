@@ -9,7 +9,10 @@
 import Foundation
 import RealmSwift
 
-class GenericTransaction : GenericModel {
+class GenericTransaction : Object {
+    // Inheritance
+    dynamic var genericModel : GenericModel? = nil
+    
     // Saved
     dynamic var totalCost : Double  = 0.0
     dynamic var name      : String  = ""

@@ -14,10 +14,11 @@ enum BudgetError: ErrorType {
     case NotFound
 }
 
-class BudgetRepository : Repository {
+class BudgetRepository {
     
     // Queries
-    func getCurrentMonthBudget() throws -> Budget {
+    class func getCurrentMonthBudget() throws -> Budget {
+        let realm   = try! Realm()
         let date    = HelperFunctions.getCurrentDate()
         let budgets = realm.objects(Budget).filter("month = \"\(date.month)\" AND year = \(date.year)")
         
@@ -28,8 +29,9 @@ class BudgetRepository : Repository {
         }
     }
     
-    func getMasterBudget() throws -> Budget {
-        let budgets = realm.objects(Budget).filter("isMaster = true")
+    class func getMasterBudget() throws -> Budget {
+        let realm   = try! Realm()
+        let budgets = realm.objects(Budget).filter("year = -1 AND month = -1")
         
         if budgets.count == 0 {
             throw BudgetError.NotFound
@@ -39,7 +41,14 @@ class BudgetRepository : Repository {
     }
     
     // Modify
-    func addSave(obj : Budget) {
-        addSave(obj, objType: "Budget")
+    class func addSave(obj : Budget) {
+        let realm = try! Realm()
+        let pkc   = Repository.getPrimaryKeyCounter("Budget")
+        
+        obj.genericModel!.id  = pkc.value
+        try! realm.write {
+            pkc.value += 1
+            realm.add(obj)
+        }
     }
 }

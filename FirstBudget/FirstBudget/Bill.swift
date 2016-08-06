@@ -9,7 +9,10 @@
 import Foundation
 import RealmSwift
 
-class Bill : BudgetCategory {
+class Bill : Object {
+    // Inheritance
+    dynamic var budgetCategory : BudgetCategory? = nil
+    
     // Saved
     dynamic var datePaid : NSDate? = NSDate()
     

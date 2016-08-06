@@ -9,7 +9,10 @@
 import Foundation
 import RealmSwift
 
-class OneTimeTransaction : GenericTransaction {
+class OneTimeTransaction : Object {
+    // Inheritance
+    dynamic var genericTransation : GenericTransaction? = nil
+    
     // Saved
     dynamic var date      : NSDate? = NSDate()
     

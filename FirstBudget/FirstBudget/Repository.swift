@@ -10,8 +10,7 @@ import Foundation
 import RealmSwift
 
 class Repository {
-    let realm = try! Realm()
-    
+    /*
     // Generic Repository functions
     func addSave(obj : GenericModel, objType : String) {
         let pkc = getPrimaryKeyCounter(objType)
@@ -34,24 +33,29 @@ class Repository {
             realm.delete(obj)
         }
     }
+    */
     
-    func deleteDB() {
+    class func deleteDB() {
+        let realm = try! Realm()
         try! realm.write {
             realm.deleteAll()
         }
     }
     
-    func getPrimaryKeyCounter(key : String) -> PrimaryKeyCounter {
+    class func getPrimaryKeyCounter(key : String) -> PrimaryKeyCounter {
+        let realm = try! Realm()
         return realm.objects(PrimaryKeyCounter).filter("key = %@", key)[0]
     }
     
-    func seedDB() {
-        // Seed Primary Key Counter if keys don't already exist
+    class func seedDB() {
+        let realm  = try! Realm()
         let pkKeys = ["GenericModel", "Budget", "BudgetCategory", "GenericTransaction", "Bill", "OneTimeTransaction"]
         
         for key in pkKeys {
             let predicateString = "key = \"\(key)\""
             let temp = realm.objects(PrimaryKeyCounter).filter(predicateString)
+            
+            // Seed Primary Key Counter if keys don't already exist
             if temp.count == 0 {
                 let pk = PrimaryKeyCounter()
                 pk.key = key

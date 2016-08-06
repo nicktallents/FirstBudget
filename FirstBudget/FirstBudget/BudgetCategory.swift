@@ -9,7 +9,10 @@
 import Foundation
 import RealmSwift
 
-class BudgetCategory : GenericModel {
+class BudgetCategory : Object {
+    // Inheritance
+    dynamic var genericModel : GenericModel? = nil
+    
     // Saved
     dynamic var name                 : String = ""
     dynamic var fullBudgetValue      : Double = 0.0

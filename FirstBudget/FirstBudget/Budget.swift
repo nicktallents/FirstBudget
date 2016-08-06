@@ -9,9 +9,12 @@
 import Foundation
 import RealmSwift
 
-class Budget : GenericModel {
+class Budget : Object {
+    // Inheritance
+    dynamic var genericModel: GenericModel? = nil
+    
     // Saved
-    // Master will be saved as year: -1, month: -1
+    // Master will have year -1, month -1
     dynamic var year  : Int = 0
     dynamic var month : Int = 0
     

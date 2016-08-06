@@ -15,7 +15,6 @@ class OverviewViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var fundsAvailableLabelLabel: UILabel!
     @IBOutlet weak var categoriesTableView: UITableView!
     
-    let repo = BudgetRepository()
     var monthBudget   : Budget?
     var overallBudget : Budget?
     
@@ -30,7 +29,7 @@ class OverviewViewController: UIViewController, UITableViewDelegate, UITableView
         
 
         do {
-            try monthBudget = repo.getCurrentMonthBudget()
+            try monthBudget = BudgetRepository.getCurrentMonthBudget()
             //fundsAvailableValueLabel.text = "$\(monthBudget."
         } catch BudgetError.NotFound {
             fundsAvailableValueLabel.text = "No Budget Made"
@@ -44,7 +43,7 @@ class OverviewViewController: UIViewController, UITableViewDelegate, UITableView
         }
         
         do {
-            try overallBudget = repo.getMasterBudget()
+            try overallBudget = BudgetRepository.getMasterBudget()
         } catch BudgetError.NotFound {
             fundsAvailableValueLabel.text = "No Budget Made"
             fundsAvailableValueLabel.textColor = UIColor.blackColor()
