@@ -22,10 +22,10 @@
 		4A48BC291CB9AF9300891764 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC281CB9AF9300891764 /* OverviewViewController.swift */; };
 		4A48BC2B1CB9B29C00891764 /* BudgetCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC2A1CB9B29C00891764 /* BudgetCategoryTableViewCell.swift */; };
 		4A48BC2D1CB9B83600891764 /* BudgetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48BC2C1CB9B83600891764 /* BudgetRepository.swift */; };
-		4A48BC371CD52A1C00891764 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A48BC351CD52A1C00891764 /* Realm.framework */; };
-		4A48BC381CD52A1C00891764 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A48BC351CD52A1C00891764 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4A48BC391CD52A1C00891764 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A48BC361CD52A1C00891764 /* RealmSwift.framework */; };
-		4A48BC3A1CD52A1C00891764 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A48BC361CD52A1C00891764 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A6541B21D8DA48E00175714 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6541B01D8DA48E00175714 /* Realm.framework */; };
+		4A6541B31D8DA48E00175714 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6541B01D8DA48E00175714 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A6541B41D8DA48E00175714 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6541B11D8DA48E00175714 /* RealmSwift.framework */; };
+		4A6541B51D8DA48E00175714 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6541B11D8DA48E00175714 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A8010EB1D4D5CC500903751 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8010EA1D4D5CC500903751 /* RealmService.swift */; };
 		4A8010EF1D4D697200903751 /* GenericTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8010EE1D4D697200903751 /* GenericTransaction.swift */; };
 		4A8010F11D4D69AD00903751 /* OneTimeTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8010F01D4D69AD00903751 /* OneTimeTransaction.swift */; };
@@ -50,14 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4A48BC341CCC14DE00891764 /* Embed Frameworks */ = {
+		4A6541B61D8DA48F00175714 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4A48BC3A1CD52A1C00891764 /* RealmSwift.framework in Embed Frameworks */,
-				4A48BC381CD52A1C00891764 /* Realm.framework in Embed Frameworks */,
+				4A6541B51D8DA48E00175714 /* RealmSwift.framework in Embed Frameworks */,
+				4A6541B31D8DA48E00175714 /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,8 +86,8 @@
 		4A48BC281CB9AF9300891764 /* OverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		4A48BC2A1CB9B29C00891764 /* BudgetCategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		4A48BC2C1CB9B83600891764 /* BudgetRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetRepository.swift; sourceTree = "<group>"; };
-		4A48BC351CD52A1C00891764 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		4A48BC361CD52A1C00891764 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		4A6541B01D8DA48E00175714 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		4A6541B11D8DA48E00175714 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		4A8010EA1D4D5CC500903751 /* RealmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		4A8010EE1D4D697200903751 /* GenericTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTransaction.swift; sourceTree = "<group>"; };
 		4A8010F01D4D69AD00903751 /* OneTimeTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneTimeTransaction.swift; sourceTree = "<group>"; };
@@ -99,8 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A48BC391CD52A1C00891764 /* RealmSwift.framework in Frameworks */,
-				4A48BC371CD52A1C00891764 /* Realm.framework in Frameworks */,
+				4A6541B41D8DA48E00175714 /* RealmSwift.framework in Frameworks */,
+				4A6541B21D8DA48E00175714 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,8 +124,8 @@
 		4A48BBD31CB945B400891764 = {
 			isa = PBXGroup;
 			children = (
-				4A48BC351CD52A1C00891764 /* Realm.framework */,
-				4A48BC361CD52A1C00891764 /* RealmSwift.framework */,
+				4A6541B01D8DA48E00175714 /* Realm.framework */,
+				4A6541B11D8DA48E00175714 /* RealmSwift.framework */,
 				4A48BBDE1CB945B400891764 /* FirstBudget */,
 				4A48BBF31CB945B500891764 /* FirstBudgetTests */,
 				4A48BBFE1CB945B500891764 /* FirstBudgetUITests */,
@@ -220,8 +220,8 @@
 				4A48BBD81CB945B400891764 /* Sources */,
 				4A48BBD91CB945B400891764 /* Frameworks */,
 				4A48BBDA1CB945B400891764 /* Resources */,
+				4A6541B61D8DA48F00175714 /* Embed Frameworks */,
 				4A48BC141CB9471A00891764 /* ShellScript */,
-				4A48BC341CCC14DE00891764 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,19 +275,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Nicholas Tallents";
 				TargetAttributes = {
 					4A48BBDB1CB945B400891764 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = EW4G67KX75;
+						LastSwiftMigration = 0800;
 					};
 					4A48BBEF1CB945B500891764 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = 4A48BBDB1CB945B400891764;
 					};
 					4A48BBFA1CB945B500891764 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = 4A48BBDB1CB945B400891764;
 					};
 				};
@@ -442,8 +445,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -487,8 +492,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -507,6 +514,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -526,6 +534,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nicktallents.FirstBudget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -544,6 +553,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nicktallents.FirstBudget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -555,6 +565,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nicktallents.FirstBudgetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstBudget.app/FirstBudget";
 			};
 			name = Debug;
@@ -567,6 +578,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nicktallents.FirstBudgetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstBudget.app/FirstBudget";
 			};
 			name = Release;
@@ -578,6 +590,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nicktallents.FirstBudgetUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FirstBudget;
 			};
 			name = Debug;
@@ -589,6 +602,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nicktallents.FirstBudgetUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FirstBudget;
 			};
 			name = Release;

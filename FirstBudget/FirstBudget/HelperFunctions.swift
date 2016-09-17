@@ -11,7 +11,7 @@ import RealmSwift
 
 class HelperFunctions {
     
-    class func sumTransactionTotals(transactions : List<GenericTransaction>) -> Double {
+    class func sumTransactionTotals(_ transactions : List<GenericTransaction>) -> Double {
         var sum : Double = 0.0
     
         for trans in transactions {
@@ -22,11 +22,11 @@ class HelperFunctions {
     }
 
     class func getCurrentDate() -> (day: Int, month: Int, year: Int) {
-        let date       = NSDate()
-        let calendar   = NSCalendar.currentCalendar()
-        let components = calendar.components([.Day, .Month, .Year], fromDate: date)
+        let date       = Date()
+        let calendar   = Calendar.current
+        let components = (calendar as NSCalendar).components([.day, .month, .year], from: date)
     
-        return (components.day, components.month, components.year)
+        return (components.day!, components.month!, components.year!)
     }
 }
 

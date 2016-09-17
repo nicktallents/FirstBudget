@@ -10,8 +10,8 @@ import Foundation
 import RealmSwift
 
 // Errors
-enum BudgetError: ErrorType {
-    case NotFound
+enum BudgetError: Swift.Error {
+    case notFound
 }
 
 class BudgetRepository {
@@ -20,10 +20,10 @@ class BudgetRepository {
     class func getCurrentMonthBudget() throws -> Budget {
         let realm   = try! Realm()
         let date    = HelperFunctions.getCurrentDate()
-        let budgets = realm.objects(Budget).filter("month = \"\(date.month)\" AND year = \(date.year)")
+        let budgets = realm.objects(Budget.self).filter("month = \"\(date.month)\" AND year = \(date.year)")
         
         if budgets.count == 0 {
-            throw BudgetError.NotFound
+            throw BudgetError.notFound
         } else {
             return budgets[0]
         }
@@ -31,17 +31,17 @@ class BudgetRepository {
     
     class func getMasterBudget() throws -> Budget {
         let realm   = try! Realm()
-        let budgets = realm.objects(Budget).filter("year = -1 AND month = -1")
+        let budgets = realm.objects(Budget.self).filter("year = -1 AND month = -1")
         
         if budgets.count == 0 {
-            throw BudgetError.NotFound
+            throw BudgetError.notFound
         } else {
             return budgets[0]
         }
     }
     
     // Modify
-    class func addSave(obj : Budget) {
+    class func addSave(_ obj : Budget) {
         let realm = try! Realm()
         let pkc   = Repository.getPrimaryKeyCounter("Budget")
         

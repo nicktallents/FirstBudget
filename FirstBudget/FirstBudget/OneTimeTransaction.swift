@@ -14,7 +14,7 @@ class OneTimeTransaction : Object {
     dynamic var genericTransation : GenericTransaction? = nil
     
     // Saved
-    dynamic var date      : NSDate? = NSDate()
+    dynamic var date      : Date? = Date()
     
     let costDistribution = [Double]()
     

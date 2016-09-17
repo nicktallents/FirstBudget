@@ -42,9 +42,9 @@ class Repository {
         }
     }
     
-    class func getPrimaryKeyCounter(key : String) -> PrimaryKeyCounter {
+    class func getPrimaryKeyCounter(_ key : String) -> PrimaryKeyCounter {
         let realm = try! Realm()
-        return realm.objects(PrimaryKeyCounter).filter("key = %@", key)[0]
+        return realm.objects(PrimaryKeyCounter.self).filter("key = %@", key)[0]
     }
     
     class func seedDB() {
@@ -53,7 +53,7 @@ class Repository {
         
         for key in pkKeys {
             let predicateString = "key = \"\(key)\""
-            let temp = realm.objects(PrimaryKeyCounter).filter(predicateString)
+            let temp = realm.objects(PrimaryKeyCounter.self).filter(predicateString)
             
             // Seed Primary Key Counter if keys don't already exist
             if temp.count == 0 {

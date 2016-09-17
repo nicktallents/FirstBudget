@@ -14,7 +14,7 @@ class Bill : Object {
     dynamic var budgetCategory : BudgetCategory? = nil
     
     // Saved
-    dynamic var datePaid : NSDate? = NSDate()
+    dynamic var datePaid : Date? = Date()
     
     // Relationships
     
